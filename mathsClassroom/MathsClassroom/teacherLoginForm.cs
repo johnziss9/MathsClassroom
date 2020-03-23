@@ -40,7 +40,7 @@ namespace MathsClassroom
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\TeacherLoginDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=TeacherLoginDatabase;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from teacherLogin where Username = '" + usernameEntry.Text + "' and Password = '" + passwordEntry.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
