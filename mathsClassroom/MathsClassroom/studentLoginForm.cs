@@ -27,8 +27,8 @@ namespace MathsClassroom
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\studentLoginDatabase.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from studentLogin where Username = '" + usernameEntry.Text + "' and Password = '" + passwordEntry.Text + "'", conn);
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=mathClassroomDB;Integrated Security=True");
+            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from StudentLogins where Username = '" + usernameEntry.Text + "' and Password = '" + passwordEntry.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")

@@ -80,7 +80,6 @@
             this.passwordTxt.Size = new System.Drawing.Size(98, 25);
             this.passwordTxt.TabIndex = 14;
             this.passwordTxt.Text = "Password";
-            this.passwordTxt.Click += new System.EventHandler(this.passwordTxt_Click);
             // 
             // usernameTxt
             // 
@@ -91,7 +90,6 @@
             this.usernameTxt.Size = new System.Drawing.Size(102, 25);
             this.usernameTxt.TabIndex = 13;
             this.usernameTxt.Text = "Username";
-            this.usernameTxt.Click += new System.EventHandler(this.usernameTxt_Click);
             // 
             // passwordEntry
             // 
@@ -100,7 +98,6 @@
             this.passwordEntry.Name = "passwordEntry";
             this.passwordEntry.Size = new System.Drawing.Size(194, 30);
             this.passwordEntry.TabIndex = 12;
-            this.passwordEntry.TextChanged += new System.EventHandler(this.passwordEntry_TextChanged);
             // 
             // usernameEntry
             // 
@@ -109,7 +106,6 @@
             this.usernameEntry.Name = "usernameEntry";
             this.usernameEntry.Size = new System.Drawing.Size(194, 30);
             this.usernameEntry.TabIndex = 11;
-            this.usernameEntry.TextChanged += new System.EventHandler(this.usernameEntry_TextChanged);
             // 
             // loginBtn
             // 

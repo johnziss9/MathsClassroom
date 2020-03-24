@@ -124,7 +124,6 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Video Link 2 (click here)";
             this.linkLabel2.VisitedLinkColor = System.Drawing.Color.LimeGreen;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label1
             // 
