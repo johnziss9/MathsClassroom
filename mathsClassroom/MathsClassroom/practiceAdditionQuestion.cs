@@ -89,7 +89,7 @@ namespace MathsClassroom
                 SqlCommand command = new SqlCommand(query, conn);
 
                 command.Parameters.AddWithValue("@Username", _username);
-                command.Parameters.AddWithValue("@Score", score.ToString());
+                command.Parameters.AddWithValue("@Score", score.ToString() + "out of 15");
                 command.Parameters.AddWithValue("@Time", time.ToString());
                 command.Parameters.AddWithValue("@DateTaken", DateTime.Now.ToShortDateString());
                 command.Parameters.AddWithValue("@Subject", "Addition");
