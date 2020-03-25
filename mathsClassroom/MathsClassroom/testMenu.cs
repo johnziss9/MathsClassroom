@@ -12,22 +12,25 @@ namespace MathsClassroom
 {
     public partial class testMenu : Form
     {
-        public testMenu()
+        string _username;
+
+        public testMenu(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void practiceBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            practiceMenu pm = new practiceMenu();
+            practiceMenu pm = new practiceMenu(_username);
             pm.Show();
         }
 
         private void testMenuBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            testMenu tm = new testMenu();
+            testMenu tm = new testMenu(_username);
             tm.Show();
         }
     }

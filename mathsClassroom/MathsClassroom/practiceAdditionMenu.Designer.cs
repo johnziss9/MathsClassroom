@@ -47,9 +47,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::MathsClassroom.Properties.Resources.SharedScreenshot2;
-            this.pictureBox4.Location = new System.Drawing.Point(22, 242);
+            this.pictureBox4.Location = new System.Drawing.Point(29, 298);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(245, 124);
+            this.pictureBox4.Size = new System.Drawing.Size(327, 153);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -60,9 +61,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::MathsClassroom.Properties.Resources.SharedScreenshot;
-            this.pictureBox3.Location = new System.Drawing.Point(22, 112);
+            this.pictureBox3.Location = new System.Drawing.Point(29, 138);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(245, 124);
+            this.pictureBox3.Size = new System.Drawing.Size(327, 153);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -72,9 +74,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::MathsClassroom.Properties.Resources.cooltext345974113752855;
-            this.pictureBox2.Location = new System.Drawing.Point(116, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(155, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(676, 75);
+            this.pictureBox2.Size = new System.Drawing.Size(901, 92);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -82,9 +85,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MathsClassroom.Properties.Resources.icons8_back_arrow_64__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(103, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -99,9 +103,10 @@
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.LimeGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(299, 149);
+            this.linkLabel1.Location = new System.Drawing.Point(399, 183);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(447, 46);
+            this.linkLabel1.Size = new System.Drawing.Size(557, 58);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Video Link 1 (click here)";
@@ -117,9 +122,10 @@
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.LimeGreen;
-            this.linkLabel2.Location = new System.Drawing.Point(299, 277);
+            this.linkLabel2.Location = new System.Drawing.Point(399, 341);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(447, 46);
+            this.linkLabel2.Size = new System.Drawing.Size(557, 58);
             this.linkLabel2.TabIndex = 5;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Video Link 2 (click here)";
@@ -131,18 +137,19 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.LimeGreen;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(689, 396);
+            this.label1.Location = new System.Drawing.Point(919, 487);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 46);
+            this.label1.Size = new System.Drawing.Size(128, 58);
             this.label1.TabIndex = 6;
             this.label1.Text = "Next";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // practiceAdditionMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 451);
+            this.ClientSize = new System.Drawing.Size(1069, 545);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -150,8 +157,9 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.MaximumSize = new System.Drawing.Size(820, 490);
-            this.MinimumSize = new System.Drawing.Size(820, 490);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(1087, 592);
+            this.MinimumSize = new System.Drawing.Size(1087, 592);
             this.Name = "practiceAdditionMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "practiceAdditionMenu";

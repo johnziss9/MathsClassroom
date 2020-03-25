@@ -13,15 +13,18 @@ namespace MathsClassroom
 {
     public partial class practiceAdditionMenu : Form
     {
-        public practiceAdditionMenu()
+        string _username;
+
+        public practiceAdditionMenu(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            practiceMenu pm = new practiceMenu();
+            practiceMenu pm = new practiceMenu(_username);
             pm.ShowDialog();
         }
 
@@ -33,7 +36,7 @@ namespace MathsClassroom
         private void label1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            practiceAdditionChoice pac = new practiceAdditionChoice();
+            practiceAdditionChoice pac = new practiceAdditionChoice(_username);
             pac.ShowDialog();
 
         }

@@ -12,9 +12,12 @@ namespace MathsClassroom
 {
     public partial class practiceAdditionChoice : Form
     {
-        public practiceAdditionChoice()
+        string _username;
+
+        public practiceAdditionChoice(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void practiceAdditionChoice_Load(object sender, EventArgs e)
@@ -25,7 +28,7 @@ namespace MathsClassroom
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            practiceAdditionQuestion paq = new practiceAdditionQuestion();
+            practiceAdditionQuestion paq = new practiceAdditionQuestion(_username);
             paq.ShowDialog();
         }
     }

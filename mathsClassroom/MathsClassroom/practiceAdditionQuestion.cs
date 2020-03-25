@@ -15,12 +15,15 @@ namespace MathsClassroom
     {
         public int j = 0;
         public int number1, number2, score;
+        string _username;
         Timer timer;
         TimeSpan time;
 
-        public practiceAdditionQuestion()
+        public practiceAdditionQuestion(string username)
         {
             InitializeComponent();
+
+            _username = username;
 
             timer = new Timer();
             timer.Interval = 1000;
@@ -41,9 +44,13 @@ namespace MathsClassroom
                 lblAnswer.Text = "Right answer";
                 score = score + 1;
                 activeScore.Text = score.ToString();
+                answer.Text = "";
             }
             else
+            {
                 lblAnswer.Text = "Wrong answer";
+                answer.Text = "";
+            }
 
             // Show question number
             if (j < 15)
@@ -74,15 +81,16 @@ namespace MathsClassroom
         {
             using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=mathClassroomDB;Integrated Security=True"))
             {
-                string query = @"INSERT INTO StudentPracticeResults (Username, Score, Time) VALUES (@Username, @Score, @Time)";
+                string query = @"INSERT INTO StudentPracticeResults (Username, Score, Time, DateTaken) VALUES (@Username, @Score, @Time, @DateTaken)";
 
                 conn.Open();
 
                 SqlCommand command = new SqlCommand(query, conn);
 
-                command.Parameters.AddWithValue("@Username", "test");
+                command.Parameters.AddWithValue("@Username", _username);
                 command.Parameters.AddWithValue("@Score", score.ToString());
                 command.Parameters.AddWithValue("@Time", time.ToString());
+                command.Parameters.AddWithValue("@DateTaken", DateTime.Now.ToShortDateString());
 
                 command.ExecuteNonQuery();
 
@@ -92,7 +100,7 @@ namespace MathsClassroom
             MessageBox.Show("Your score has been saved.", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             Hide();
-            practiceMenu ss = new practiceMenu();
+            practiceMenu ss = new practiceMenu(_username);
             ss.Show();
         }
 

@@ -34,7 +34,7 @@ namespace MathsClassroom
             if (dt.Rows[0][0].ToString() == "1")
             {
                 this.Hide();
-                practiceMenu ss = new practiceMenu();
+                practiceMenu ss = new practiceMenu(usernameEntry.Text);
                 ss.Show();
             }
             else
