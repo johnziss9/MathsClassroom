@@ -37,6 +37,7 @@ namespace MathsClassroom
 
         private void submit_Click(object sender, EventArgs e)
         {
+            // Checks answer and clears textbox
             int total = number1 + number2;
 
             if (answer.Text == total.ToString())
@@ -81,7 +82,7 @@ namespace MathsClassroom
         {
             using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=mathClassroomDB;Integrated Security=True"))
             {
-                string query = @"INSERT INTO StudentPracticeResults (Username, Score, Time, DateTaken) VALUES (@Username, @Score, @Time, @DateTaken)";
+                string query = @"INSERT INTO StudentPracticeResults (Username, Score, Time, DateTaken, Subject) VALUES (@Username, @Score, @Time, @DateTaken, @Subject)";
 
                 conn.Open();
 
@@ -91,6 +92,7 @@ namespace MathsClassroom
                 command.Parameters.AddWithValue("@Score", score.ToString());
                 command.Parameters.AddWithValue("@Time", time.ToString());
                 command.Parameters.AddWithValue("@DateTaken", DateTime.Now.ToShortDateString());
+                command.Parameters.AddWithValue("@Subject", "Addition");
 
                 command.ExecuteNonQuery();
 
