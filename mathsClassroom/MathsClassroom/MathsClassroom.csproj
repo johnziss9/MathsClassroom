@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addStudentHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudentHomepage.Designer.cs">
+      <DependentUpon>addStudentHomepage.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +90,41 @@
     <Compile Include="studentLoginForm.Designer.cs">
       <DependentUpon>studentLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="teacherConfimationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherConfimationScreen.Designer.cs">
+      <DependentUpon>teacherConfimationScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="teacherLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="teacherLoginForm.Designer.cs">
       <DependentUpon>teacherLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherNumberQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherNumberQuestions.Designer.cs">
+      <DependentUpon>teacherNumberQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherQuestionChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherQuestionChoice.Designer.cs">
+      <DependentUpon>teacherQuestionChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherSetHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherSetHomework.Designer.cs">
+      <DependentUpon>teacherSetHomework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherViewHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherViewHomework.Designer.cs">
+      <DependentUpon>teacherViewHomework.cs</DependentUpon>
     </Compile>
     <Compile Include="testMenu.cs">
       <SubType>Form</SubType>
@@ -96,6 +132,9 @@
     <Compile Include="testMenu.Designer.cs">
       <DependentUpon>testMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addStudentHomepage.resx">
+      <DependentUpon>addStudentHomepage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,8 +163,23 @@
     <EmbeddedResource Include="studentLoginForm.resx">
       <DependentUpon>studentLoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="teacherConfimationScreen.resx">
+      <DependentUpon>teacherConfimationScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="teacherLoginForm.resx">
       <DependentUpon>teacherLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherNumberQuestions.resx">
+      <DependentUpon>teacherNumberQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherQuestionChoice.resx">
+      <DependentUpon>teacherQuestionChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherSetHomework.resx">
+      <DependentUpon>teacherSetHomework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherViewHomework.resx">
+      <DependentUpon>teacherViewHomework.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testMenu.resx">
       <DependentUpon>testMenu.cs</DependentUpon>

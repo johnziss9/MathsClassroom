@@ -26,10 +26,9 @@ namespace MathsClassroom
             sda.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
             {
-                // TODO Should be going to the teachers main page
-                //this.Hide();
-                //practiceMenu ss = new practiceMenu();
-                //ss.Show();
+                Hide();
+                teacherSetHomework setHomework = new teacherSetHomework();
+                setHomework.Show();
             }
             else
                 MessageBox.Show("please enter correct username and password");
