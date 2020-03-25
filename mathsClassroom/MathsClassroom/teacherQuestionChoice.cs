@@ -20,11 +20,6 @@ namespace MathsClassroom
             _studentName = studentName;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
