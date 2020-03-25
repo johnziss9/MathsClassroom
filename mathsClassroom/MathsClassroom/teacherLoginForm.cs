@@ -27,8 +27,8 @@ namespace MathsClassroom
             if (dt.Rows[0][0].ToString() == "1")
             {
                 Hide();
-                teacherSetHomework setHomework = new teacherSetHomework();
-                setHomework.Show();
+                addStudentHomepage addStudent = new addStudentHomepage();
+                addStudent.Show();
             }
             else
                 MessageBox.Show("please enter correct username and password");

@@ -12,9 +12,12 @@ namespace MathsClassroom
 {
     public partial class teacherNumberQuestions : Form
     {
-        public teacherNumberQuestions()
+        string _studentName;
+
+        public teacherNumberQuestions(string studentName)
         {
             InitializeComponent();
+            _studentName = studentName;
         }
 
         private void addStudentBtn_Click(object sender, EventArgs e)
@@ -35,14 +38,14 @@ namespace MathsClassroom
         private void addTopicBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            teacherQuestionChoice tqc = new teacherQuestionChoice();
+            teacherQuestionChoice tqc = new teacherQuestionChoice(_studentName);
             tqc.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            teacherConfimationScreen tcs = new teacherConfimationScreen();
+            teacherConfimationScreen tcs = new teacherConfimationScreen(_studentName);
             tcs.ShowDialog();
         }
     }

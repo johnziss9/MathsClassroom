@@ -12,9 +12,12 @@ namespace MathsClassroom
 {
     public partial class teacherConfimationScreen : Form
     {
-        public teacherConfimationScreen()
+        string _studentName;
+
+        public teacherConfimationScreen(string studentName)
         {
             InitializeComponent();
+            _studentName = studentName;
         }
 
         private void label7_Click(object sender, EventArgs e)

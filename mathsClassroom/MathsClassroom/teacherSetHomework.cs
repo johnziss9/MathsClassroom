@@ -33,6 +33,8 @@ namespace MathsClassroom
 
         private void teacherSetHomework_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'mathClassroomDBDataSet.StudentLogins' table. You can move, or remove it, as needed.
+            this.studentLoginsTableAdapter.Fill(this.mathClassroomDBDataSet.StudentLogins);
 
         }
 
@@ -49,7 +51,7 @@ namespace MathsClassroom
         private void select_Click(object sender, EventArgs e)
         {
             this.Hide();
-            teacherQuestionChoice tqc = new teacherQuestionChoice();
+            teacherQuestionChoice tqc = new teacherQuestionChoice(comboStudents.Text);
             tqc.ShowDialog();
         }
 
