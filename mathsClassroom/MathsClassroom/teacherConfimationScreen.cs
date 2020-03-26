@@ -13,16 +13,18 @@ namespace MathsClassroom
 {
     public partial class teacherConfimationScreen : Form
     {
+        string _dueDate;
         string _studentName;
         List<string> _subjects;
         List<int> _noOfQuestions;
 
-        public teacherConfimationScreen(string studentName, List<string> subjects, List<int> noOfQuestions)
+        public teacherConfimationScreen(string studentName, List<string> subjects, List<int> noOfQuestions, string dueDate)
         {
             InitializeComponent();
             _studentName = studentName;
             _subjects = subjects;
             _noOfQuestions = noOfQuestions;
+            _dueDate = dueDate;
         }
 
         private void teacherConfimationScreen_Load(object sender, EventArgs e)
@@ -65,7 +67,7 @@ namespace MathsClassroom
             using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=mathClassroomDB;Integrated Security=True"))
             {
                 int subjectPosition = 0;
-                string query = @"INSERT INTO Homework (Student, Subject, NoOfQuestions, Score, Completed) VALUES (@Student, @Subject, @NoOfQuestions, @Score, @Completed)";
+                string query = @"INSERT INTO Homework (Student, Subject, NoOfQuestions, Score, Completed, DueDate, DateSubmitted) VALUES (@Student, @Subject, @NoOfQuestions, @Score, @Completed, @DueDate, @DateSubmitted)";
 
                 foreach (var sub in _subjects)
                 {
@@ -78,6 +80,8 @@ namespace MathsClassroom
                     command.Parameters.AddWithValue("@NoOfQuestions", _noOfQuestions[subjectPosition]);
                     command.Parameters.AddWithValue("@Score", 0);
                     command.Parameters.AddWithValue("@Completed", false);
+                    command.Parameters.AddWithValue("@DueDate", _dueDate);
+                    command.Parameters.AddWithValue("@DateSubmitted", "");
 
                     command.ExecuteNonQuery();
 

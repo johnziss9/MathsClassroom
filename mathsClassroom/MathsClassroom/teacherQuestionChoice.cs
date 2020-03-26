@@ -32,6 +32,7 @@ namespace MathsClassroom
             radio10.Enabled = true;
             radio15.Enabled = true;
             radio20.Enabled = true;
+            dateTimeDueIn.Enabled = true;
             btnAdd.Enabled = true;
         }
 
@@ -43,6 +44,7 @@ namespace MathsClassroom
             radio10.Enabled = true;
             radio15.Enabled = true;
             radio20.Enabled = true;
+            dateTimeDueIn.Enabled = true;
             btnAdd.Enabled = true;
         }
 
@@ -54,6 +56,7 @@ namespace MathsClassroom
             radio10.Enabled = true;
             radio15.Enabled = true;
             radio20.Enabled = true;
+            dateTimeDueIn.Enabled = true;
             btnAdd.Enabled = true;
         }
 
@@ -65,6 +68,7 @@ namespace MathsClassroom
             radio10.Enabled = true;
             radio15.Enabled = true;
             radio20.Enabled = true;
+            dateTimeDueIn.Enabled = true;
             btnAdd.Enabled = true;
         }
 
@@ -100,13 +104,14 @@ namespace MathsClassroom
             radio10.Enabled = false;
             radio15.Enabled = false;
             radio20.Enabled = false;
+            dateTimeDueIn.Enabled = false;
             btnAdd.Enabled = false;
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
             this.Hide();
-            teacherConfimationScreen teacherConfimation = new teacherConfimationScreen(_studentName, subjects, noOfQuestions);
+            teacherConfimationScreen teacherConfimation = new teacherConfimationScreen(_studentName, subjects, noOfQuestions, dateTimeDueIn.Value.ToShortDateString());
             teacherConfimation.ShowDialog();
         }
     }

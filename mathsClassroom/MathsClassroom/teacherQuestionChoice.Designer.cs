@@ -46,6 +46,9 @@
             this.radio20 = new System.Windows.Forms.RadioButton();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblHomeworksAdded = new System.Windows.Forms.Label();
+            this.lblDueIn = new System.Windows.Forms.Label();
+            this.lblNumberOfQuestions = new System.Windows.Forms.Label();
+            this.dateTimeDueIn = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -235,7 +238,7 @@
             // 
             this.btnAdd.Enabled = false;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnAdd.Location = new System.Drawing.Point(773, 345);
+            this.btnAdd.Location = new System.Drawing.Point(745, 410);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(149, 50);
@@ -254,11 +257,43 @@
             this.lblHomeworksAdded.TabIndex = 18;
             this.lblHomeworksAdded.Text = "Homeworks Added: 0";
             // 
+            // lblDueIn
+            // 
+            this.lblDueIn.AutoSize = true;
+            this.lblDueIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblDueIn.Location = new System.Drawing.Point(709, 333);
+            this.lblDueIn.Name = "lblDueIn";
+            this.lblDueIn.Size = new System.Drawing.Size(75, 25);
+            this.lblDueIn.TabIndex = 19;
+            this.lblDueIn.Text = "Due In:";
+            // 
+            // lblNumberOfQuestions
+            // 
+            this.lblNumberOfQuestions.AutoSize = true;
+            this.lblNumberOfQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblNumberOfQuestions.Location = new System.Drawing.Point(709, 151);
+            this.lblNumberOfQuestions.Name = "lblNumberOfQuestions";
+            this.lblNumberOfQuestions.Size = new System.Drawing.Size(202, 25);
+            this.lblNumberOfQuestions.TabIndex = 20;
+            this.lblNumberOfQuestions.Text = "Number of Questions:";
+            // 
+            // dateTimeDueIn
+            // 
+            this.dateTimeDueIn.Enabled = false;
+            this.dateTimeDueIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dateTimeDueIn.Location = new System.Drawing.Point(714, 366);
+            this.dateTimeDueIn.Name = "dateTimeDueIn";
+            this.dateTimeDueIn.Size = new System.Drawing.Size(208, 26);
+            this.dateTimeDueIn.TabIndex = 21;
+            // 
             // teacherQuestionChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 601);
+            this.Controls.Add(this.dateTimeDueIn);
+            this.Controls.Add(this.lblNumberOfQuestions);
+            this.Controls.Add(this.lblDueIn);
             this.Controls.Add(this.lblHomeworksAdded);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.radio20);
@@ -305,5 +340,8 @@
         private System.Windows.Forms.RadioButton radio20;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblHomeworksAdded;
+        private System.Windows.Forms.Label lblDueIn;
+        private System.Windows.Forms.Label lblNumberOfQuestions;
+        private System.Windows.Forms.DateTimePicker dateTimeDueIn;
     }
 }
