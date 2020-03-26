@@ -106,7 +106,7 @@ namespace MathsClassroom
         private void btnContinue_Click(object sender, EventArgs e)
         {
             this.Hide();
-            teacherConfimationScreen teacherConfimation = new teacherConfimationScreen(_studentName, subjects);
+            teacherConfimationScreen teacherConfimation = new teacherConfimationScreen(_studentName, subjects, noOfQuestions);
             teacherConfimation.ShowDialog();
         }
     }

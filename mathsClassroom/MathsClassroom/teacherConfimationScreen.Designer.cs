@@ -38,8 +38,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnYes = new System.Windows.Forms.Button();
+            this.btnNo = new System.Windows.Forms.Button();
             this.additionQuestions = new System.Windows.Forms.Label();
             this.subtractionQuestions = new System.Windows.Forms.Label();
             this.multiplicationQuestions = new System.Windows.Forms.Label();
@@ -147,29 +147,30 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Is this correct ?";
             // 
-            // button1
+            // btnYes
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button1.Location = new System.Drawing.Point(443, 303);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 86);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "yes";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
+            this.btnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnYes.Location = new System.Drawing.Point(443, 303);
+            this.btnYes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.Size = new System.Drawing.Size(213, 86);
+            this.btnYes.TabIndex = 20;
+            this.btnYes.Text = "yes";
+            this.btnYes.UseVisualStyleBackColor = false;
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
-            // button2
+            // btnNo
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button2.Location = new System.Drawing.Point(665, 303);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 86);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "no";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
+            this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnNo.Location = new System.Drawing.Point(665, 303);
+            this.btnNo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNo.Name = "btnNo";
+            this.btnNo.Size = new System.Drawing.Size(213, 86);
+            this.btnNo.TabIndex = 21;
+            this.btnNo.Text = "no";
+            this.btnNo.UseVisualStyleBackColor = false;
             // 
             // additionQuestions
             // 
@@ -236,8 +237,8 @@
             this.Controls.Add(this.multiplicationQuestions);
             this.Controls.Add(this.subtractionQuestions);
             this.Controls.Add(this.additionQuestions);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNo);
+            this.Controls.Add(this.btnYes);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -269,8 +270,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnYes;
+        private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Label additionQuestions;
         private System.Windows.Forms.Label subtractionQuestions;
         private System.Windows.Forms.Label multiplicationQuestions;
