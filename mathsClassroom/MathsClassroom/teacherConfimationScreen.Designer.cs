@@ -53,7 +53,7 @@
             // 
             this.pictureBox1.Image = global::MathsClassroom.Properties.Resources.icons8_back_arrow_64__1_;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 84);
             this.pictureBox1.TabIndex = 7;
@@ -62,8 +62,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(292, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(214, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(538, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -73,13 +73,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
             this.label1.Location = new System.Drawing.Point(85, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 31);
+            this.label1.Size = new System.Drawing.Size(176, 31);
             this.label1.TabIndex = 8;
-            this.label1.Text = "confirm:";
+            this.label1.Text = "Confirmation:";
             // 
             // label2
             // 
@@ -129,7 +129,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label6.Location = new System.Drawing.Point(85, 425);
+            this.label6.Location = new System.Drawing.Point(85, 426);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 31);
@@ -140,20 +140,19 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label7.Location = new System.Drawing.Point(655, 210);
+            this.label7.Location = new System.Drawing.Point(553, 221);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(199, 31);
             this.label7.TabIndex = 14;
             this.label7.Text = "Is this correct ?";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button1.Location = new System.Drawing.Point(545, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(443, 303);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(213, 86);
             this.button1.TabIndex = 20;
@@ -164,8 +163,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button2.Location = new System.Drawing.Point(767, 292);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(665, 303);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 86);
             this.button2.TabIndex = 21;
@@ -176,7 +175,7 @@
             // 
             this.additionQuestions.AutoSize = true;
             this.additionQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.additionQuestions.Location = new System.Drawing.Point(229, 233);
+            this.additionQuestions.Location = new System.Drawing.Point(225, 233);
             this.additionQuestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.additionQuestions.Name = "additionQuestions";
             this.additionQuestions.Size = new System.Drawing.Size(29, 31);
@@ -187,7 +186,7 @@
             // 
             this.subtractionQuestions.AutoSize = true;
             this.subtractionQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.subtractionQuestions.Location = new System.Drawing.Point(268, 276);
+            this.subtractionQuestions.Location = new System.Drawing.Point(265, 276);
             this.subtractionQuestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subtractionQuestions.Name = "subtractionQuestions";
             this.subtractionQuestions.Size = new System.Drawing.Size(29, 31);
@@ -198,7 +197,7 @@
             // 
             this.multiplicationQuestions.AutoSize = true;
             this.multiplicationQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.multiplicationQuestions.Location = new System.Drawing.Point(293, 320);
+            this.multiplicationQuestions.Location = new System.Drawing.Point(284, 320);
             this.multiplicationQuestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.multiplicationQuestions.Name = "multiplicationQuestions";
             this.multiplicationQuestions.Size = new System.Drawing.Size(29, 31);
@@ -209,7 +208,7 @@
             // 
             this.divisionQuestions.AutoSize = true;
             this.divisionQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.divisionQuestions.Location = new System.Drawing.Point(229, 363);
+            this.divisionQuestions.Location = new System.Drawing.Point(223, 363);
             this.divisionQuestions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.divisionQuestions.Name = "divisionQuestions";
             this.divisionQuestions.Size = new System.Drawing.Size(29, 31);
@@ -220,7 +219,7 @@
             // 
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.name.Location = new System.Drawing.Point(152, 425);
+            this.name.Location = new System.Drawing.Point(163, 426);
             this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(81, 31);
@@ -231,7 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(974, 515);
             this.Controls.Add(this.name);
             this.Controls.Add(this.divisionQuestions);
             this.Controls.Add(this.multiplicationQuestions);
@@ -248,9 +247,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "teacherConfimationScreen";
             this.Text = "teacherConfimationScreen";
+            this.Load += new System.EventHandler(this.teacherConfimationScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

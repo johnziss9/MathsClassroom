@@ -107,12 +107,6 @@
     <Compile Include="teacherLoginForm.Designer.cs">
       <DependentUpon>teacherLoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="teacherNumberQuestions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="teacherNumberQuestions.Designer.cs">
-      <DependentUpon>teacherNumberQuestions.cs</DependentUpon>
-    </Compile>
     <Compile Include="teacherQuestionChoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,9 +167,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="teacherLoginForm.resx">
       <DependentUpon>teacherLoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="teacherNumberQuestions.resx">
-      <DependentUpon>teacherNumberQuestions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="teacherQuestionChoice.resx">
       <DependentUpon>teacherQuestionChoice.cs</DependentUpon>

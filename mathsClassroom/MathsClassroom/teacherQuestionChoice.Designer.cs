@@ -32,14 +32,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.additionBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSubstraction = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMultiplication = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDivision = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.radio5 = new System.Windows.Forms.RadioButton();
+            this.radio10 = new System.Windows.Forms.RadioButton();
+            this.radio15 = new System.Windows.Forms.RadioButton();
+            this.radio20 = new System.Windows.Forms.RadioButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblHomeworksAdded = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -51,8 +57,8 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.additionBtn);
-            this.panel1.Location = new System.Drawing.Point(263, 151);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(98, 151);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(579, 64);
             this.panel1.TabIndex = 6;
@@ -63,96 +69,100 @@
             this.additionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.additionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.additionBtn.Location = new System.Drawing.Point(0, 0);
-            this.additionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.additionBtn.Margin = new System.Windows.Forms.Padding(4);
             this.additionBtn.Name = "additionBtn";
             this.additionBtn.Size = new System.Drawing.Size(579, 64);
             this.additionBtn.TabIndex = 11;
             this.additionBtn.Text = "Addition";
             this.additionBtn.UseVisualStyleBackColor = false;
+            this.additionBtn.Click += new System.EventHandler(this.additionBtn_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(263, 223);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Controls.Add(this.btnSubstraction);
+            this.panel2.Location = new System.Drawing.Point(98, 223);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(579, 64);
             this.panel2.TabIndex = 7;
             // 
-            // button1
+            // btnSubstraction
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(579, 64);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Subtraction";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSubstraction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
+            this.btnSubstraction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSubstraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnSubstraction.Location = new System.Drawing.Point(0, 0);
+            this.btnSubstraction.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubstraction.Name = "btnSubstraction";
+            this.btnSubstraction.Size = new System.Drawing.Size(579, 64);
+            this.btnSubstraction.TabIndex = 12;
+            this.btnSubstraction.Text = "Subtraction";
+            this.btnSubstraction.UseVisualStyleBackColor = false;
+            this.btnSubstraction.Click += new System.EventHandler(this.btnSubstraction_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(263, 294);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Controls.Add(this.btnMultiplication);
+            this.panel3.Location = new System.Drawing.Point(98, 294);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(579, 64);
             this.panel3.TabIndex = 7;
             // 
-            // button2
+            // btnMultiplication
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(579, 64);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Multiplication";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnMultiplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
+            this.btnMultiplication.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMultiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnMultiplication.Location = new System.Drawing.Point(0, 0);
+            this.btnMultiplication.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMultiplication.Name = "btnMultiplication";
+            this.btnMultiplication.Size = new System.Drawing.Size(579, 64);
+            this.btnMultiplication.TabIndex = 12;
+            this.btnMultiplication.Text = "Multiplication";
+            this.btnMultiplication.UseVisualStyleBackColor = false;
+            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Location = new System.Drawing.Point(263, 366);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Controls.Add(this.btnDivision);
+            this.panel4.Location = new System.Drawing.Point(98, 366);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(579, 64);
             this.panel4.TabIndex = 7;
             // 
-            // button3
+            // btnDivision
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(579, 64);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Division";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnDivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
+            this.btnDivision.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnDivision.Location = new System.Drawing.Point(0, 0);
+            this.btnDivision.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDivision.Name = "btnDivision";
+            this.btnDivision.Size = new System.Drawing.Size(579, 64);
+            this.btnDivision.TabIndex = 12;
+            this.btnDivision.Text = "Division";
+            this.btnDivision.UseVisualStyleBackColor = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
-            // button4
+            // btnContinue
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button4.Location = new System.Drawing.Point(469, 466);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(157, 50);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Continue";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnContinue.Location = new System.Drawing.Point(440, 520);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(4);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(157, 50);
+            this.btnContinue.TabIndex = 8;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(280, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(238, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(538, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -163,25 +173,106 @@
             // 
             this.pictureBox1.Image = global::MathsClassroom.Properties.Resources.icons8_back_arrow_64__1_;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 84);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // radio5
+            // 
+            this.radio5.AutoSize = true;
+            this.radio5.Enabled = false;
+            this.radio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.radio5.Location = new System.Drawing.Point(773, 184);
+            this.radio5.Name = "radio5";
+            this.radio5.Size = new System.Drawing.Size(138, 29);
+            this.radio5.TabIndex = 13;
+            this.radio5.TabStop = true;
+            this.radio5.Text = "5 Questions";
+            this.radio5.UseVisualStyleBackColor = true;
+            // 
+            // radio10
+            // 
+            this.radio10.AutoSize = true;
+            this.radio10.Enabled = false;
+            this.radio10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.radio10.Location = new System.Drawing.Point(773, 219);
+            this.radio10.Name = "radio10";
+            this.radio10.Size = new System.Drawing.Size(149, 29);
+            this.radio10.TabIndex = 14;
+            this.radio10.TabStop = true;
+            this.radio10.Text = "10 Questions";
+            this.radio10.UseVisualStyleBackColor = true;
+            // 
+            // radio15
+            // 
+            this.radio15.AutoSize = true;
+            this.radio15.Enabled = false;
+            this.radio15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.radio15.Location = new System.Drawing.Point(773, 254);
+            this.radio15.Name = "radio15";
+            this.radio15.Size = new System.Drawing.Size(149, 29);
+            this.radio15.TabIndex = 15;
+            this.radio15.TabStop = true;
+            this.radio15.Text = "15 Questions";
+            this.radio15.UseVisualStyleBackColor = true;
+            // 
+            // radio20
+            // 
+            this.radio20.AutoSize = true;
+            this.radio20.Enabled = false;
+            this.radio20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.radio20.Location = new System.Drawing.Point(773, 289);
+            this.radio20.Name = "radio20";
+            this.radio20.Size = new System.Drawing.Size(149, 29);
+            this.radio20.TabIndex = 16;
+            this.radio20.TabStop = true;
+            this.radio20.Text = "20 Questions";
+            this.radio20.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Enabled = false;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnAdd.Location = new System.Drawing.Point(773, 345);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(149, 50);
+            this.btnAdd.TabIndex = 17;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // lblHomeworksAdded
+            // 
+            this.lblHomeworksAdded.AutoSize = true;
+            this.lblHomeworksAdded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblHomeworksAdded.Location = new System.Drawing.Point(415, 464);
+            this.lblHomeworksAdded.Name = "lblHomeworksAdded";
+            this.lblHomeworksAdded.Size = new System.Drawing.Size(200, 25);
+            this.lblHomeworksAdded.TabIndex = 18;
+            this.lblHomeworksAdded.Text = "Homeworks Added: 0";
+            // 
             // teacherQuestionChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(1016, 601);
+            this.Controls.Add(this.lblHomeworksAdded);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.radio20);
+            this.Controls.Add(this.radio15);
+            this.Controls.Add(this.radio10);
+            this.Controls.Add(this.radio5);
+            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "teacherQuestionChoice";
             this.Text = "teacherQuestionChoice";
             this.panel1.ResumeLayout(false);
@@ -204,9 +295,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button additionBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSubstraction;
+        private System.Windows.Forms.Button btnMultiplication;
+        private System.Windows.Forms.Button btnDivision;
+        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.RadioButton radio5;
+        private System.Windows.Forms.RadioButton radio10;
+        private System.Windows.Forms.RadioButton radio15;
+        private System.Windows.Forms.RadioButton radio20;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblHomeworksAdded;
     }
 }
