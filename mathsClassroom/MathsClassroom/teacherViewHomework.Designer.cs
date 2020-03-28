@@ -36,13 +36,13 @@
             this.lblCompleted = new System.Windows.Forms.Label();
             this.lblNoCompleted = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridNotCompleted = new System.Windows.Forms.DataGridView();
             this.dataGridCompleted = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridNotCompleted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCompleted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.07749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.92251F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 356F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 357F));
             this.tableLayoutPanel1.Controls.Add(this.viewHomeworkBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.setHomeworkBtn, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.addStudentBtn, 0, 0);
@@ -67,10 +67,10 @@
             this.viewHomeworkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.viewHomeworkBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.viewHomeworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.viewHomeworkBtn.Location = new System.Drawing.Point(724, 4);
+            this.viewHomeworkBtn.Location = new System.Drawing.Point(723, 4);
             this.viewHomeworkBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewHomeworkBtn.Name = "viewHomeworkBtn";
-            this.viewHomeworkBtn.Size = new System.Drawing.Size(349, 47);
+            this.viewHomeworkBtn.Size = new System.Drawing.Size(350, 47);
             this.viewHomeworkBtn.TabIndex = 2;
             this.viewHomeworkBtn.Text = "View Homework";
             this.viewHomeworkBtn.UseVisualStyleBackColor = false;
@@ -83,7 +83,7 @@
             this.setHomeworkBtn.Location = new System.Drawing.Point(357, 4);
             this.setHomeworkBtn.Margin = new System.Windows.Forms.Padding(4);
             this.setHomeworkBtn.Name = "setHomeworkBtn";
-            this.setHomeworkBtn.Size = new System.Drawing.Size(359, 47);
+            this.setHomeworkBtn.Size = new System.Drawing.Size(358, 47);
             this.setHomeworkBtn.TabIndex = 1;
             this.setHomeworkBtn.Text = "Set Homework";
             this.setHomeworkBtn.UseVisualStyleBackColor = false;
@@ -133,17 +133,6 @@
             this.lblDate.TabIndex = 7;
             this.lblDate.Text = "Date: 00/00/0000";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(197, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(611, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // dataGridNotCompleted
             // 
             this.dataGridNotCompleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -163,6 +152,17 @@
             this.dataGridCompleted.TabIndex = 9;
             this.dataGridCompleted.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridCompleted_RowHeaderMouseDoubleClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(197, 39);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(611, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // teacherViewHomework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,9 +180,9 @@
             this.Text = "teacherViewHomework";
             this.Load += new System.EventHandler(this.teacherViewHomework_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridNotCompleted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCompleted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
