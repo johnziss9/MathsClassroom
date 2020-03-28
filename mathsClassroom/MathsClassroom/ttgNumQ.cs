@@ -17,17 +17,18 @@ namespace MathsClassroom
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             ttgSubject sub = new ttgSubject();
             sub.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ttgQuestions ttgQuestions = new ttgQuestions();
+            ttgQuestions.Show();
         }
     }
 }
