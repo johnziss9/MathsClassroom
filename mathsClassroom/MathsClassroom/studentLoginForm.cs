@@ -16,6 +16,7 @@ namespace MathsClassroom
         public studentLoginForm()
         {
             InitializeComponent();
+            passwordEntry.PasswordChar = '*';
         }
 
         private void goToTeacherBtn_Click(object sender, EventArgs e)
