@@ -55,12 +55,11 @@
             this.tableLayoutPanel1.Controls.Add(this.practiceBtn, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.homeworkMenuBtn, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.testMenuBtn, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, 505);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(-1, 410);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1073, 52);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(805, 42);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // practiceBtn
@@ -68,24 +67,21 @@
             this.practiceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.practiceBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.practiceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.practiceBtn.Location = new System.Drawing.Point(361, 4);
-            this.practiceBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.practiceBtn.Location = new System.Drawing.Point(271, 3);
             this.practiceBtn.Name = "practiceBtn";
-            this.practiceBtn.Size = new System.Drawing.Size(349, 44);
+            this.practiceBtn.Size = new System.Drawing.Size(262, 36);
             this.practiceBtn.TabIndex = 4;
             this.practiceBtn.Text = "Practice";
             this.practiceBtn.UseVisualStyleBackColor = false;
-            this.practiceBtn.Click += new System.EventHandler(this.practiceBtn_Click);
             // 
             // homeworkMenuBtn
             // 
             this.homeworkMenuBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.homeworkMenuBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homeworkMenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.homeworkMenuBtn.Location = new System.Drawing.Point(4, 4);
-            this.homeworkMenuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.homeworkMenuBtn.Location = new System.Drawing.Point(3, 3);
             this.homeworkMenuBtn.Name = "homeworkMenuBtn";
-            this.homeworkMenuBtn.Size = new System.Drawing.Size(349, 44);
+            this.homeworkMenuBtn.Size = new System.Drawing.Size(262, 36);
             this.homeworkMenuBtn.TabIndex = 3;
             this.homeworkMenuBtn.Text = "Homework";
             this.homeworkMenuBtn.UseVisualStyleBackColor = false;
@@ -95,10 +91,9 @@
             this.testMenuBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.testMenuBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.testMenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.testMenuBtn.Location = new System.Drawing.Point(718, 4);
-            this.testMenuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testMenuBtn.Location = new System.Drawing.Point(539, 3);
             this.testMenuBtn.Name = "testMenuBtn";
-            this.testMenuBtn.Size = new System.Drawing.Size(351, 44);
+            this.testMenuBtn.Size = new System.Drawing.Size(263, 36);
             this.testMenuBtn.TabIndex = 2;
             this.testMenuBtn.Text = "Test";
             this.testMenuBtn.UseVisualStyleBackColor = false;
@@ -118,8 +113,7 @@
             this.tableLayoutPanel2.Controls.Add(this.subtractionBtn, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.additionBtn, 0, 0);
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 4F);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(131, 121);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(98, 98);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -127,8 +121,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(824, 361);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(618, 293);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // divisionBtn
@@ -136,10 +130,9 @@
             this.divisionBtn.BackColor = System.Drawing.Color.White;
             this.divisionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divisionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.divisionBtn.Location = new System.Drawing.Point(4, 292);
-            this.divisionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.divisionBtn.Location = new System.Drawing.Point(3, 235);
             this.divisionBtn.Name = "divisionBtn";
-            this.divisionBtn.Size = new System.Drawing.Size(816, 65);
+            this.divisionBtn.Size = new System.Drawing.Size(612, 55);
             this.divisionBtn.TabIndex = 14;
             this.divisionBtn.Text = "Division";
             this.divisionBtn.UseVisualStyleBackColor = false;
@@ -149,10 +142,9 @@
             this.MultiplicationBtn.BackColor = System.Drawing.Color.White;
             this.MultiplicationBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MultiplicationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.MultiplicationBtn.Location = new System.Drawing.Point(4, 220);
-            this.MultiplicationBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MultiplicationBtn.Location = new System.Drawing.Point(3, 177);
             this.MultiplicationBtn.Name = "MultiplicationBtn";
-            this.MultiplicationBtn.Size = new System.Drawing.Size(816, 64);
+            this.MultiplicationBtn.Size = new System.Drawing.Size(612, 52);
             this.MultiplicationBtn.TabIndex = 13;
             this.MultiplicationBtn.Text = "Multiplication";
             this.MultiplicationBtn.UseVisualStyleBackColor = false;
@@ -162,23 +154,22 @@
             this.ttgBtn.BackColor = System.Drawing.Color.White;
             this.ttgBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ttgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.ttgBtn.Location = new System.Drawing.Point(4, 148);
-            this.ttgBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ttgBtn.Location = new System.Drawing.Point(3, 119);
             this.ttgBtn.Name = "ttgBtn";
-            this.ttgBtn.Size = new System.Drawing.Size(816, 64);
+            this.ttgBtn.Size = new System.Drawing.Size(612, 52);
             this.ttgBtn.TabIndex = 12;
             this.ttgBtn.Text = "Times Table Game";
             this.ttgBtn.UseVisualStyleBackColor = false;
+            this.ttgBtn.Click += new System.EventHandler(this.ttgBtn_Click);
             // 
             // subtractionBtn
             // 
             this.subtractionBtn.BackColor = System.Drawing.Color.White;
             this.subtractionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.subtractionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.subtractionBtn.Location = new System.Drawing.Point(4, 76);
-            this.subtractionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.subtractionBtn.Location = new System.Drawing.Point(3, 61);
             this.subtractionBtn.Name = "subtractionBtn";
-            this.subtractionBtn.Size = new System.Drawing.Size(816, 64);
+            this.subtractionBtn.Size = new System.Drawing.Size(612, 52);
             this.subtractionBtn.TabIndex = 11;
             this.subtractionBtn.Text = "Subtraction";
             this.subtractionBtn.UseVisualStyleBackColor = false;
@@ -188,10 +179,9 @@
             this.additionBtn.BackColor = System.Drawing.Color.White;
             this.additionBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.additionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.additionBtn.Location = new System.Drawing.Point(4, 4);
-            this.additionBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.additionBtn.Location = new System.Drawing.Point(3, 3);
             this.additionBtn.Name = "additionBtn";
-            this.additionBtn.Size = new System.Drawing.Size(816, 64);
+            this.additionBtn.Size = new System.Drawing.Size(612, 52);
             this.additionBtn.TabIndex = 10;
             this.additionBtn.Text = "Addition";
             this.additionBtn.UseVisualStyleBackColor = false;
@@ -202,25 +192,23 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::MathsClassroom.Properties.Resources.cooltext345024976675660;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1040, 85);
+            this.pictureBox1.Size = new System.Drawing.Size(780, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // practiceMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 555);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(2554, 1318);
-            this.MinimumSize = new System.Drawing.Size(1087, 592);
+            this.MaximumSize = new System.Drawing.Size(1920, 1078);
+            this.MinimumSize = new System.Drawing.Size(819, 488);
             this.Name = "practiceMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "practiceMenu";

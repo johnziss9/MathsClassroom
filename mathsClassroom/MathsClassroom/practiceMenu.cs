@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MathsClassroom
@@ -20,18 +13,6 @@ namespace MathsClassroom
             _username = username;
         }
 
-        //public practiceMenu()
-        //{
-        //    InitializeComponent();
-        //}
-
-        private void practiceBtn_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            //practiceMenu pm = new practiceMenu();
-            //pm.ShowDialog();
-        }
-
         private void testMenuBtn_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,6 +25,13 @@ namespace MathsClassroom
             this.Hide();
             practiceAdditionMenu pam = new practiceAdditionMenu(_username);
             pam.ShowDialog();
+        }
+
+        private void ttgBtn_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //ttgSubject sub = new ttgSubject();
+            //sub.ShowDialog();
         }
     }
 }

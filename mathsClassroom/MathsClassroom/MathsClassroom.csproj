@@ -137,6 +137,24 @@
     <Compile Include="testMenu.Designer.cs">
       <DependentUpon>testMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ttgNumQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttgNumQ.Designer.cs">
+      <DependentUpon>ttgNumQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttgQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttgQuestions.Designer.cs">
+      <DependentUpon>ttgQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttgSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttgSubject.Designer.cs">
+      <DependentUpon>ttgSubject.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addStudentHomepage.resx">
       <DependentUpon>addStudentHomepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +206,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="testMenu.resx">
       <DependentUpon>testMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttgNumQ.resx">
+      <DependentUpon>ttgNumQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttgQuestions.resx">
+      <DependentUpon>ttgQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttgSubject.resx">
+      <DependentUpon>ttgSubject.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="mathClassroomDBDataSet.xsc">
       <DependentUpon>mathClassroomDBDataSet.xsd</DependentUpon>
