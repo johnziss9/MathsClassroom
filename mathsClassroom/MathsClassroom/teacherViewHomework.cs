@@ -35,18 +35,20 @@ namespace MathsClassroom
 
                 da.Fill(dt);
                 bsCom.DataSource = dt;
-                dataGridCompleted.DataSource = bsCom;
+                dataGridNotCompleted.DataSource = bsCom;
 
                 // Fill in completed homeworks
 
                 BindingSource bsNotCom = new BindingSource();
 
                 dt = new DataTable();
-                da = new SqlDataAdapter("SELECT Student, Subject, Score, NoOfQuestions, DueDate, DateSubmitted FROM Homework WHERE Completed = 1", conn);
+                da = new SqlDataAdapter("SELECT Id, Student, Subject, Score, NoOfQuestions, DueDate, DateSubmitted FROM Homework WHERE Completed = 1", conn);
 
                 da.Fill(dt);
                 bsNotCom.DataSource = dt;
-                dataGridNotCompleted.DataSource = bsNotCom;
+                dataGridCompleted.DataSource = bsNotCom;
+
+                dataGridCompleted.Columns[0].Visible = false;
             }
         }
 
@@ -62,6 +64,15 @@ namespace MathsClassroom
             Hide();
             teacherSetHomework setHomework = new teacherSetHomework();
             setHomework.Show();
+        }
+
+        private void dataGridCompleted_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var currentRow = Convert.ToInt32(dataGridCompleted.CurrentRow.Cells[0].Value);
+            
+            Hide();
+            teacherViewSingleHomework teacherViewSingle = new teacherViewSingleHomework(currentRow);
+            teacherViewSingle.Show();
         }
     }
 }

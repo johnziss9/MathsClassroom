@@ -125,6 +125,12 @@
     <Compile Include="teacherViewHomework.Designer.cs">
       <DependentUpon>teacherViewHomework.cs</DependentUpon>
     </Compile>
+    <Compile Include="teacherViewSingleHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherViewSingleHomework.Designer.cs">
+      <DependentUpon>teacherViewSingleHomework.cs</DependentUpon>
+    </Compile>
     <Compile Include="testMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="teacherViewHomework.resx">
       <DependentUpon>teacherViewHomework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherViewSingleHomework.resx">
+      <DependentUpon>teacherViewSingleHomework.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testMenu.resx">
       <DependentUpon>testMenu.cs</DependentUpon>
