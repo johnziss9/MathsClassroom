@@ -62,7 +62,6 @@
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
             // button2
             // 
@@ -74,7 +73,6 @@
             this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // button3
             // 
@@ -86,7 +84,6 @@
             this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             // 
             // button4
             // 
@@ -98,7 +95,6 @@
             this.button4.TabIndex = 11;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             // 
             // button5
             // 
@@ -110,7 +106,6 @@
             this.button5.TabIndex = 12;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             // 
             // button6
             // 
@@ -122,7 +117,6 @@
             this.button6.TabIndex = 13;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             // 
             // button7
             // 
@@ -134,7 +128,6 @@
             this.button7.TabIndex = 14;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
             // 
             // button8
             // 
@@ -146,7 +139,6 @@
             this.button8.TabIndex = 15;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
             // 
             // ttgQuestions
             // 
