@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,12 +39,26 @@ namespace MathsClassroom
 
         private void button1_Click(object sender, EventArgs e)
         {
+            using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-I1C7SOR;Initial Catalog=mathClassroomDB;Integrated Security=True"))
+            {
+                string query = @"INSERT INTO StudentLogins (Username, Password) VALUES (@Username, @Password)";
 
-        }
+                conn.Open();
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+                SqlCommand command = new SqlCommand(query, conn);
 
+                command.Parameters.AddWithValue("@Username", txtUsername.Text);
+                command.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+            }
+
+            MessageBox.Show("The student userame and password have been saved.", "Student Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtUsername.Text = "";
+            txtPassword.Text = "";
         }
     }
 }
