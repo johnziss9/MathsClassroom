@@ -114,5 +114,12 @@ namespace MathsClassroom
             teacherConfimationScreen teacherConfimation = new teacherConfimationScreen(_studentName, subjects, noOfQuestions, dateTimeDueIn.Value.ToShortDateString());
             teacherConfimation.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            teacherSetHomework setHomework = new teacherSetHomework();
+            setHomework.Show();
+        }
     }
 }

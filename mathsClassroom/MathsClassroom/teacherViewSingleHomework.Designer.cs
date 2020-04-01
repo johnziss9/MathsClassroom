@@ -40,7 +40,9 @@
             this.lblHomeworkPercentage = new System.Windows.Forms.Label();
             this.lblHomeworkOutcome = new System.Windows.Forms.Label();
             this.lblStudentmName = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblStudent
@@ -154,11 +156,24 @@
             this.lblStudentmName.TabIndex = 9;
             this.lblStudentmName.Text = "Student";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MathsClassroom.Properties.Resources.icons8_back_arrow_64__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(29, 29);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(84, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // teacherViewSingleHomework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(999, 576);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblSubjectName);
             this.Controls.Add(this.lblHomeworkScore);
             this.Controls.Add(this.lblHomeworkPercentage);
@@ -174,6 +189,7 @@
             this.Text = "teacherViewSingleHomework";
             this.Load += new System.EventHandler(this.teacherViewSingleHomework_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +208,6 @@
         private System.Windows.Forms.Label lblHomeworkPercentage;
         private System.Windows.Forms.Label lblHomeworkOutcome;
         private System.Windows.Forms.Label lblStudentmName;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

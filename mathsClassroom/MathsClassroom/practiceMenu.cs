@@ -30,7 +30,7 @@ namespace MathsClassroom
         private void ttgBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ttgSubject sub = new ttgSubject();
+            ttgSubject sub = new ttgSubject(_username);
             sub.ShowDialog();
         }
     }

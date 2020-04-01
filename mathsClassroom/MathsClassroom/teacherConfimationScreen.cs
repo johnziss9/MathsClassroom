@@ -97,5 +97,12 @@ namespace MathsClassroom
                 addStudent.Show();
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            teacherQuestionChoice qChoice = new teacherQuestionChoice(_studentName);
+            qChoice.Show();
+        }
     }
 }

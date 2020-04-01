@@ -51,5 +51,12 @@ namespace MathsClassroom
                 conn.Close();
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            teacherViewHomework viewHomework = new teacherViewHomework();
+            viewHomework.Show();
+        }
     }
 }

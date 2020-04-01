@@ -7,6 +7,8 @@ namespace MathsClassroom
 {
     public partial class ttgQuestions : Form
     {
+        string _username;
+
         Random random;
         List<int> buttons = new List<int>();
         int randomNubmer;
@@ -55,9 +57,11 @@ namespace MathsClassroom
 
         bool gameOver = false;
 
-        public ttgQuestions()
+        public ttgQuestions(string username)
         {
             InitializeComponent();
+
+            _username = username;
 
             // Fill in the list
             for (int i = 1; i <= 8; i++)
@@ -134,7 +138,14 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
+                
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -159,7 +170,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -184,7 +201,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -209,7 +232,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -234,7 +263,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -257,7 +292,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -280,7 +321,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -305,7 +352,13 @@ namespace MathsClassroom
             }
 
             if (gameOver)
-                MessageBox.Show("Congratulations, You've completed the game!");
+            {
+                MessageBox.Show("Congratulations, You've completed the game!", "CONGRATULATIONS!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                Hide();
+                practiceMenu practiceMenu = new practiceMenu(_username);
+                practiceMenu.Show();
+            }
         }
 
         private string AssignQuestion(int num)

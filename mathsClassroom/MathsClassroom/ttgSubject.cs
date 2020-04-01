@@ -1,27 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MathsClassroom
 {
     public partial class ttgSubject : Form
     {
-        public ttgSubject()
+        string _username;
+
+        public ttgSubject(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ttgNumQ nq = new ttgNumQ();
+            ttgNumQ nq = new ttgNumQ(_username);
             nq.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            practiceMenu practiceMenu = new practiceMenu(_username);
+            practiceMenu.Show();
         }
     }
 }

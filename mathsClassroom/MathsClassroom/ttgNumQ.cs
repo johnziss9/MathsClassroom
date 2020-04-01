@@ -12,22 +12,25 @@ namespace MathsClassroom
 {
     public partial class ttgNumQ : Form
     {
-        public ttgNumQ()
+        string _username;
+
+        public ttgNumQ(string username)
         {
             InitializeComponent();
+            _username = username;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ttgSubject sub = new ttgSubject();
+            ttgSubject sub = new ttgSubject(_username);
             sub.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            ttgQuestions ttgQuestions = new ttgQuestions();
+            ttgQuestions ttgQuestions = new ttgQuestions(_username);
             ttgQuestions.Show();
         }
     }

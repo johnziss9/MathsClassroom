@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.07749F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.92251F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 357F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 359F));
             this.tableLayoutPanel1.Controls.Add(this.viewHomeworkBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.setHomeworkBtn, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.addStudentBtn, 0, 0);
@@ -67,10 +67,10 @@
             this.viewHomeworkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.viewHomeworkBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.viewHomeworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.viewHomeworkBtn.Location = new System.Drawing.Point(723, 4);
+            this.viewHomeworkBtn.Location = new System.Drawing.Point(721, 4);
             this.viewHomeworkBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewHomeworkBtn.Name = "viewHomeworkBtn";
-            this.viewHomeworkBtn.Size = new System.Drawing.Size(350, 47);
+            this.viewHomeworkBtn.Size = new System.Drawing.Size(352, 47);
             this.viewHomeworkBtn.TabIndex = 2;
             this.viewHomeworkBtn.Text = "View Homework";
             this.viewHomeworkBtn.UseVisualStyleBackColor = false;
@@ -80,10 +80,10 @@
             this.setHomeworkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(244)))), ((int)(((byte)(63)))));
             this.setHomeworkBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.setHomeworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.setHomeworkBtn.Location = new System.Drawing.Point(357, 4);
+            this.setHomeworkBtn.Location = new System.Drawing.Point(356, 4);
             this.setHomeworkBtn.Margin = new System.Windows.Forms.Padding(4);
             this.setHomeworkBtn.Name = "setHomeworkBtn";
-            this.setHomeworkBtn.Size = new System.Drawing.Size(358, 47);
+            this.setHomeworkBtn.Size = new System.Drawing.Size(357, 47);
             this.setHomeworkBtn.TabIndex = 1;
             this.setHomeworkBtn.Text = "Set Homework";
             this.setHomeworkBtn.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@
             this.addStudentBtn.Location = new System.Drawing.Point(4, 4);
             this.addStudentBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addStudentBtn.Name = "addStudentBtn";
-            this.addStudentBtn.Size = new System.Drawing.Size(345, 47);
+            this.addStudentBtn.Size = new System.Drawing.Size(344, 47);
             this.addStudentBtn.TabIndex = 0;
             this.addStudentBtn.Text = "Add Student";
             this.addStudentBtn.UseVisualStyleBackColor = false;
