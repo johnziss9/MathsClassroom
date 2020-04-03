@@ -33,5 +33,12 @@ namespace MathsClassroom
             testMenu tm = new testMenu(_username);
             tm.Show();
         }
+
+        private void homeworkMenuBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            studentHomework sh = new studentHomework(_username);
+            sh.Show();
+        }
     }
 }

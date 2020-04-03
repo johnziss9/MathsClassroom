@@ -18,11 +18,6 @@ namespace MathsClassroom
             InitializeComponent();
         }
 
-        private void addStudentHomepage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void viewHomeworkBtn_Click(object sender, EventArgs e)
         {
             this.Hide();

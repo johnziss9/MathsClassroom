@@ -33,5 +33,12 @@ namespace MathsClassroom
             ttgSubject sub = new ttgSubject(_username);
             sub.ShowDialog();
         }
+
+        private void homeworkMenuBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            studentHomework sh = new studentHomework(_username);
+            sh.Show();
+        }
     }
 }

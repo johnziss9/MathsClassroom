@@ -52,6 +52,12 @@
     <Compile Include="addStudentHomepage.Designer.cs">
       <DependentUpon>addStudentHomepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="homeworkQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeworkQuestions.Designer.cs">
+      <DependentUpon>homeworkQuestions.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="studentHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentHomework.Designer.cs">
+      <DependentUpon>studentHomework.cs</DependentUpon>
+    </Compile>
     <Compile Include="studentLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +170,9 @@
     <EmbeddedResource Include="addStudentHomepage.resx">
       <DependentUpon>addStudentHomepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="homeworkQuestions.resx">
+      <DependentUpon>homeworkQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +198,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="studentHomework.resx">
+      <DependentUpon>studentHomework.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="studentLoginForm.resx">
       <DependentUpon>studentLoginForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -176,7 +176,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addStudentHomepage";
             this.Text = "addStudentHomepage";
-            this.Load += new System.EventHandler(this.addStudentHomepage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

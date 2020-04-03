@@ -16,7 +16,6 @@ namespace MathsClassroom
         public int j = 0;
         public int number1, number2, score;
         string _username;
-        Timer timer;
         TimeSpan time;
 
         public practiceAdditionQuestion(string username)
@@ -24,15 +23,6 @@ namespace MathsClassroom
             InitializeComponent();
 
             _username = username;
-
-            timer = new Timer();
-            timer.Interval = 1000;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            time = time.Add(new TimeSpan(0, 0, 1));
-            lblTimer.Text = time.ToString("hh\\:mm\\:ss");
         }
 
         private void submit_Click(object sender, EventArgs e)
@@ -76,6 +66,12 @@ namespace MathsClassroom
         private void practiceAdditionQuestion_Load(object sender, EventArgs e)
         {
             NewQuestion();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            time = time.Add(new TimeSpan(0, 0, 1));
+            lblTimer.Text = time.ToString("hh\\:mm\\:ss");
         }
 
         private void btnEndPractice_Click(object sender, EventArgs e)

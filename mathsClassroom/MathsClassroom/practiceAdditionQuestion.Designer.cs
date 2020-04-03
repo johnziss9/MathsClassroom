@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTimer = new System.Windows.Forms.Label();
             this.num1 = new System.Windows.Forms.Label();
             this.num2 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.lblNotes = new System.Windows.Forms.Label();
             this.btnEndPractice = new System.Windows.Forms.Button();
             this.lblAnswer = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,12 +65,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Time:";
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
@@ -78,8 +72,9 @@
             this.lblTimer.Location = new System.Drawing.Point(229, 213);
             this.lblTimer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(0, 52);
+            this.lblTimer.Size = new System.Drawing.Size(191, 52);
             this.lblTimer.TabIndex = 2;
+            this.lblTimer.Text = "00:00:00";
             // 
             // num1
             // 
@@ -269,6 +264,12 @@
             this.lblAnswer.Size = new System.Drawing.Size(0, 18);
             this.lblAnswer.TabIndex = 22;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // practiceAdditionQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,7 +310,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.Label num1;
         private System.Windows.Forms.Label num2;
@@ -327,5 +327,6 @@
         private System.Windows.Forms.Label lblNotes;
         private System.Windows.Forms.Button btnEndPractice;
         private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.Timer timer1;
     }
 }
