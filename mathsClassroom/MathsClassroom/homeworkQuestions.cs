@@ -163,6 +163,25 @@ namespace MathsClassroom
             Random rand = new Random();
             number1 = rand.Next(100, 999);
             number2 = rand.Next(10, 99);
+
+            if (_subject == "Division")
+            {
+                while (number1 % number2 != 0)
+                {
+                    number1 = rand.Next(100, 999);
+                    number2 = rand.Next(10, 99);
+                }
+            }
+            
+            if (_subject == "Substraction")
+            {
+                while (number1 < number2)
+                {
+                    number1 = rand.Next(100, 999);
+                    number2 = rand.Next(10, 99);
+                }
+            }
+
             num1.Text = number1.ToString();
             num2.Text = number2.ToString();
         }
